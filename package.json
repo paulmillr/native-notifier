@@ -1,0 +1,32 @@
+{
+  "name": "native-notifier",
+  "version": "0.1.0",
+  "description": "Native node.js notifier for MacOS, Windows and Linux. No growl and 3rd parties.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/paulmillr/native-notifier.git"
+  },
+  "keywords": [
+    "node",
+    "native",
+    "notify",
+    "notifier",
+    "macos",
+    "linux",
+    "windows",
+    "growl"
+  ],
+  "author": "Alexey Shvaika, Paul Miller (paulmillr.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulmillr/native-notifier/issues"
+  },
+  "homepage": "https://github.com/paulmillr/native-notifier#readme",
+  "dependencies": {
+    "tag-shell": "github:paulmillr/tag-shell"
+  }
+}
