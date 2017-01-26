@@ -6,7 +6,7 @@ Use native system notifications without third-party libraries.
 const notify = require('native-notifier');
 notify({
   app: 'XCode',
-  icon: 'xcode.png',
+  icon: `${__dirname}/xcode.png`,
   message: 'Software version is invalid',
   title: 'XCode error'
 });
