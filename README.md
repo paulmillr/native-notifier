@@ -1,6 +1,6 @@
 # native-notifier
 
-Use native system notifications without third-party libraries.
+Use native system notifications for MacOS, Win & Linux. No bullshit & no Growl.
 
 ```javascript
 const notify = require('native-notifier');
