@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/paulmillr/native-notifier#readme",
   "dependencies": {
-    "tag-shell": "github:paulmillr/tag-shell"
+    "tag-shell": "~0.1.0"
   }
 }
