@@ -26,7 +26,7 @@ var withTitle = app.systemAttribute('TITLE');
 var message = app.systemAttribute('MESSAGE');
 
 if (withTitle || message) {
-  app.displayNotification(message, {withTitle});
+  app.displayNotification(message, {withTitle: withTitle});
 } else {
   showNode();
 }
