@@ -1,6 +1,6 @@
 {
   "name": "native-notifier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use native system notifications for MacOS, Win & Linux. No bullshit & no Growl.",
   "main": "index.js",
   "scripts": {
