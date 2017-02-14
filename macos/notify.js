@@ -6,8 +6,13 @@ var showNode = function() {
   var term = Application('Terminal');
   if (!term.running()) return;
 
-  for (var win of term.windows()) {
-    for (var tab of win.tabs()) {
+  var windows = term.windows();
+  var win, tabs, tab;
+  for (var i = 0; i < windows.length; i++) {
+    win = windows[i];
+    tabs = win.tabs();
+    for (var j = 0; j < tabs.length; j++) {
+      tab = tabs[j];
       if (!tab.processes().includes('node')) continue;
 
       tab.selected = true;
