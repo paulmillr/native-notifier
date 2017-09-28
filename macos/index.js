@@ -14,7 +14,9 @@ const getAppPath = (appName, iconSrc) => {
     sh`osacompile -l JavaScript -o ${appPath} ${notify}`;
 
     const iconDest = `${appPath}/Contents/Resources/applet.icns`;
-    sh`sips -s format icns ${iconSrc} --out ${iconDest}`;
+    try {
+      sh`sips -s format icns ${iconSrc} --out ${iconDest}`;
+    } catch (e) {}
 
     const bundleId = `com.paulmillr.loggy.${appName}`;
     const plistPath = `${appPath}/Contents/Info.plist`;
@@ -32,5 +34,5 @@ module.exports = opts => {
     MESSAGE: opts.message,
   };
 
-  sh.async({env})`open -a ${appPath}`;
+  return sh.async({env})`open -a ${appPath}`.on('error', () => {});
 };
