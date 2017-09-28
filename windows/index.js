@@ -7,5 +7,5 @@ module.exports = opts => {
   return sh.async`powershell -file ${notify}
     -app ${opts.app} -icon ${opts.icon}
     -title ${opts.title} -message ${opts.message}
-  `.on('error', () => {});
+  `;
 };

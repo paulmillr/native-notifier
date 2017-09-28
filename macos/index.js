@@ -34,5 +34,5 @@ module.exports = opts => {
     MESSAGE: opts.message,
   };
 
-  return sh.async({env})`open -a ${appPath}`.on('error', () => {});
+  return sh.async({env})`open -a ${appPath}`;
 };
