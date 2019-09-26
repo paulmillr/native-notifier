@@ -19,6 +19,6 @@ const notifyFunc = (() => {
 // doesn't exist, for example.
 module.exports = (opts) => {
   const child = notifyFunc(opts);
-  if (child.on) child.on('error', () => {});
+  if (child && typeof child.on === 'function') child.on('error', () => {});
   return child;
 };
